@@ -2,6 +2,10 @@ const express = require("express");
 
 const app = express();
 
+app.use(express.json());
+
+
+
 app.get("/courses", (req, res) => {
     const query = request.query;
     console.log(query);
